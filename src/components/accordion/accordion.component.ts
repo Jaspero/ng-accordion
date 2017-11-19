@@ -13,6 +13,11 @@ export class AccordionComponent {
 
   trigger(accord: AccordComponent) {
     if (!accord.disabled) {
+
+      const toSet = !accord.act;
+      const state = toSet ? 'open' : 'closed';
+
+
       if (this.singleActive) {
         this.accords.forEach(a => {
           if (!a.disabled) {
@@ -22,8 +27,8 @@ export class AccordionComponent {
         });
       }
 
-      accord.act = !accord.act;
-      accord.inner = accord.act ? 'open' : 'closed';
+      accord.act = toSet;
+      accord.inner = state;
     }
   }
 

@@ -18,6 +18,7 @@ const animationTime = 200;
   encapsulation: ViewEncapsulation.None,
   selector: 'jaspero-accord',
   templateUrl: './accord.component.html',
+  styleUrls: ['./accord.component.scss'],
   animations: [
     trigger('anim', [
       state('open', style({height: '*'})),
@@ -25,8 +26,7 @@ const animationTime = 200;
       transition('closed <=> open', animate(`${animationTime}ms ease`)),
       transition('closed <=> open', style({height: '*'}))
     ])
-  ],
-  styleUrls: ['./accord.component.scss']
+  ]
 })
 export class AccordComponent implements OnInit {
   constructor(
