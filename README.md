@@ -1,26 +1,26 @@
-[![Build Status](https://travis-ci.org/Jaspero/ng-tabs.svg?branch=master)](https://travis-ci.org/jaspero/ng-tabs)
-[![NPM Version](https://img.shields.io/npm/v/@jaspero/ng-tabs.svg)](https://www.npmjs.com/package/@jaspero/ng-tabs)
+[![Build Status](https://travis-ci.org/Jaspero/ng-accordion.svg?branch=master)](https://travis-ci.org/jaspero/ng-accordion)
+[![NPM Version](https://img.shields.io/npm/v/@jaspero/ng-accordion.svg)](https://www.npmjs.com/package/@jaspero/ng-accordion)
 
-# NG Tabs
-An easy tabs implementation for Angular.
+# NG Accordion
+An Accordion for Angular.
 
-A demo can be found [here](https://jaspero.co/resources/projects/ng-tabs)
+A demo can be found [here](https://jaspero.co/resources/projects/ng-accordion)
 
 ## Installation
 
 To install this library, run:
 
 ```bash
-$ npm install --save @jaspero/ng-tabs
+$ npm install --save @jaspero/ng-accordion
 ```
 
 ## Setup
-Import `JasperoTabsModule` in your `@NgModule`:
+Import `JasperoAccordionModule` in your `@NgModule`:
 
 ```ts
 @NgModule({
     imports: [
-        JasperoTabsModule
+        JasperoAccordionModule
     ],
     declarations: [AppComponent],
     bootstrap: [AppComponent]
@@ -31,30 +31,35 @@ export class AppModule {}
 Then create the component in a root component (you can create it anywhere but you can only use it in that component on any lower ones).
 
 ## How To Use
-You can use any of a following will approaches:
+Using the library is farly strait forward.
 ```html
-<jaspero-tabs>
-  <jaspero-tab [tabTitle]="templateRef">Content 1</jaspero-tab>
-  <jaspero-tab [tabTitle]="'<p>example 2</p>'">Content 2</jaspero-tab>
-  <jaspero-tab tabTitle="example 3">Content 3</jaspero-tab>
-</jaspero-tabs>
+<jaspero-accordion [singleActive]="false">
+  <jaspero-accord [accordTitle]="templateRef">Content 1</jaspero-accord>
+  <jaspero-accord [accordTitle]="'<p>example 2</p>'">Content 2</jaspero-accord>
+  <jaspero-accord accordTitle="example 3">Content 3</jaspero-accord>
+</jaspero-accordion>
 <ng-template #templateRef>
   <p>This is an example</p>
 </ng-template>
 ```
+
+The `accordTitle` can be a simple string, a string containing html or a template ref.
+
 ### Options
 
 Available inputs: 
 
 ```typescript
-tabTitle: string | TemplateRef<any> = 'Tab'; // default value is 'Tab'
-active: boolean // defaults to the first if no tabs are active
+
+// jaspero-accordion
+singleActive: boolean = true // Should more then one accord be toggled at the same time
+
+// jaspero-accord
+accordTitle: string | TemplateRef<any> = 'Accord'
+active: boolean 
 disabled: boolean // default value is false. Prevents tab from being toggled
 ```
 
-**Note:**
-
-The `tabTitle` input can be a string or a TemplateRef.
 
 ### FAQ
 
