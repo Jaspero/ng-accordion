@@ -19,11 +19,8 @@ export class AccordionComponent {
 
 
       if (this.singleActive) {
-        this.accords.forEach(a => {
-          if (!a.disabled) {
-            a.act = false;
-            a.inner = 'closed';
-          }
+        this.accords.forEach(innerAccord => {
+          innerAccord.close();
         });
       }
 

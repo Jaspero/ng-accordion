@@ -66,4 +66,10 @@ export class AccordComponent implements OnInit {
     this.accordionComp.trigger(this);
     this._cdr.markForCheck();
   }
+
+  close() {
+    this.act = false;
+    this.inner = 'closed';
+    this._cdr.markForCheck();
+  }
 }
