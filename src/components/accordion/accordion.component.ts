@@ -5,7 +5,6 @@ import {AccordComponent} from '../accord/accord.component';
   selector: 'jaspero-accordion',
   template: '<ng-content></ng-content>'
 })
-
 export class AccordionComponent {
 
   @Input() singleActive = false;

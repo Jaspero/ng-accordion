@@ -28,7 +28,6 @@ const animationTime = 200;
   ],
   styleUrls: ['./accord.component.scss']
 })
-
 export class AccordComponent implements OnInit {
   constructor(
     private accordionComp: AccordionComponent,
