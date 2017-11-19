@@ -1,0 +1,24 @@
+jaspero-accord {
+
+  display: block;
+
+  .jaspero__accord_bar {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    display: flex;
+    user-select: none;
+    background: white;
+    position: relative;
+    padding: 10px 15px;
+  }
+
+  .jaspero__accord_inner {
+    display: block;
+    background: white;
+
+    &.closed {
+      overflow: hidden;
+    }
+  }
+}

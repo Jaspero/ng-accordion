@@ -1,11 +1,11 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {TabsComponent} from './components/tabs/tabs.component';
-import {TabComponent} from './components/tab/tab.component';
 import {VariableContentComponent} from './components/variable-content/variable-content.component';
+import {AccordionComponent} from './components/accordion/accordion.component';
+import {AccordComponent} from './components/accord/accord.component';
 
-export * from './components/tabs/tabs.component';
-export * from './components/tab/tab.component';
+export * from './components/accordion/accordion.component';
+export * from './components/accord/accord.component';
 export * from './components/variable-content/variable-content.component';
 
 @NgModule({
@@ -13,13 +13,13 @@ export * from './components/variable-content/variable-content.component';
     CommonModule
   ],
   declarations: [
-    TabsComponent,
-    TabComponent,
+    AccordionComponent,
+    AccordComponent,
     VariableContentComponent
   ],
   exports: [
-    TabsComponent,
-    TabComponent,
+    AccordionComponent,
+    AccordComponent
   ]
 })
 export class JasperoAccordionModule {}
