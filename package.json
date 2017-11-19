@@ -1,6 +1,6 @@
 {
   "name": "@jaspero/ng-accordion",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An Accordion for Angular",
   "scripts": {
     "build": "gulp build",

@@ -7,7 +7,7 @@ import {AccordComponent} from '../accord/accord.component';
 })
 export class AccordionComponent {
 
-  @Input() singleActive = false;
+  @Input() singleActive = true;
 
   accords: AccordComponent[] = [];
 

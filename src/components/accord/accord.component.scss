@@ -20,5 +20,16 @@ jaspero-accord {
     &.closed {
       overflow: hidden;
     }
+
+    &_content {
+      padding: 10px 15px;
+    }
+  }
+
+  &.active {
+    &.jaspero__accord_bar {
+      color: #ec4a1d;
+      border-bottom-color: #ec4a1d;
+    }
   }
 }

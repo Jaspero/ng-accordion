@@ -2,5 +2,7 @@
     <jaspero-variable-content [isTemplate]="isTemplate" [item]="innerTitle"></jaspero-variable-content>
 </div>
 <div class="jaspero__accord_inner" [@anim]="inner" [ngClass]="{closed: hasOverflow || inner === 'closed'}">
-    <ng-content></ng-content>
+    <div class="jaspero__accord_inner_content">
+        <ng-content></ng-content>
+    </div>
 </div>

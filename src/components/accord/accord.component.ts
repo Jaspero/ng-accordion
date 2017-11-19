@@ -41,7 +41,7 @@ export class AccordComponent implements OnInit {
     this.inner = act ? 'open' : 'closed';
   }
 
-  @Input() set (accordTitle: string | TemplateRef<any>) {
+  @Input() set accordTitle(accordTitle: string | TemplateRef<any>) {
     this.innerTitle = accordTitle;
     this.isTemplate =  accordTitle instanceof TemplateRef;
   };
