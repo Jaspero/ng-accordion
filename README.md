@@ -4,7 +4,7 @@
 # NG Accordion
 An Accordion for Angular.
 
-A demo can be found [here](https://jaspero.co/resources/projects/ng-accordion)
+A demo can be found [here](https://stackblitz.com/edit/jaspero-ng-accordion)
 
 ## Installation
 
