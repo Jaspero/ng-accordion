@@ -1,6 +1,6 @@
 {
   "name": "@jaspero/ng-accordion",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "repository": {
     "type": "git",
     "url": "https://github.com/Jaspero/ng-accordion"
@@ -22,8 +22,8 @@
   "jsnext:main": "ng-accordion.js",
   "typings": "ng-accordion.d.ts",
   "peerDependencies": {
-    "@angular/common": "^5.0.0",
-    "@angular/core": "^5.0.0",
-    "@angular/animations": "^5.0.0"
+    "@angular/common": "^6.0.0",
+    "@angular/core": "^6.0.0",
+    "@angular/animations": "^6.0.0"
   }
 }
