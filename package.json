@@ -1,6 +1,6 @@
 {
   "name": "@jaspero/ng-accordion",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "An Accordion for Angular",
   "scripts": {
     "build": "gulp build",
@@ -9,7 +9,8 @@
     "docs:build": "compodoc -p tsconfig.json -n ng-accordion -d docs --hideGenerator",
     "docs:serve": "npm run docs:build -- -s",
     "docs:watch": "npm run docs:build -- -s -w",
-    "lint": "tslint --type-check --project tsconfig.json src/**/*.ts"
+    "lint": "tslint --type-check --project tsconfig.json src/**/*.ts",
+    "publish": "npm run build && npm publish dist"
   },
   "repository": {
     "type": "git",
